@@ -67,6 +67,13 @@
             this.publisher = publisher;
         }
 
-
+        public void DisplayDetails()
+        {
+            Console.WriteLine($"Book Title: {title}");
+            Console.WriteLine($"Book Author: {author}");
+            Console.WriteLine($"Book ISBN: {isbn}");
+            Console.WriteLine($"Book Genre: {genre}");
+            Console.WriteLine($"Book Publisher: {publisher}");
+        }
     }
 }
