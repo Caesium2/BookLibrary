@@ -53,17 +53,19 @@
             bookCount++;
             isbn = 23452341;
             genre = "Classic";
+            year = 1925;
             publisher = "Charles Scribner's Sons";
 
         }
 
-        public Book(string title, string author, int isbn, string genre, string publisher)
+        public Book(string title, string author, int isbn, string genre,int year, string publisher)
         {
             bookCount++;
             this.title = title;
             this.author = author;
             this.isbn = isbn;
             this.genre = genre;
+            this.year = year;
             this.publisher = publisher;
         }
 
@@ -73,7 +75,9 @@
             Console.WriteLine($"Book Author: {author}");
             Console.WriteLine($"Book ISBN: {isbn}");
             Console.WriteLine($"Book Genre: {genre}");
+            Console.WriteLine($"Book Year: {year}");
             Console.WriteLine($"Book Publisher: {publisher}");
+            Console.WriteLine();
         }
     }
 }
